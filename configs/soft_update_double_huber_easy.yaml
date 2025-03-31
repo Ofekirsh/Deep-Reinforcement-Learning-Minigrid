@@ -1,0 +1,34 @@
+env_name: "MiniGrid-MultiRoom-N4-S5-v0" #options "MiniGrid-MultiRoom-N6-v0" or "MiniGrid-MultiRoom-N4-S5-v0" or "MiniGrid-MultiRoom-N4-S5-v0"
+learning_rate: 0.0001
+gamma: 0.99
+batch_size: 32
+epsilon_start: 1.0
+epsilon_end: 0.1
+epsilon_decay: 100000
+buffer_size: 10000
+target_update: 20
+num_episodes: 20000
+eval_episodes: 5
+num_actions: 4
+preprocessing_pipeline: "custom"  # options: "custom" or "deepmind"
+replay_buffer: "uniform"  # Options: "uniform" or "prioritized"
+priority_alpha: 0.6           # Only needed if using prioritized replay
+
+# ---------
+agent_variant: "soft_update_double_huber"
+# Options:
+# - "base"                  -> Standard DQNAgentBase (Vanilla DQN)
+# - "soft_update"           -> Uses Soft Target Update (Polyak Averaging)
+# - "huber_loss"            -> Uses Huber Loss instead of MSE Loss
+# - "double_dqn"            -> Uses Double DQN to reduce Q-value overestimation
+# - "double_huber"          -> Uses both Double DQN and Huber Loss
+# - "soft_update_huber"     -> Uses both Soft Update and Huber Loss
+# - "soft_update_double"    -> Uses both Soft Update and Double DQN
+# - "soft_update_double_huber" -> Uses Soft Update, Double DQN, and Huber Loss
+
+# ----------
+
+soft_update_tau: 0.005      # Only needed if using soft update
+uber_loss_weight: 0.01  # Only needed if using Uber Loss
+
+

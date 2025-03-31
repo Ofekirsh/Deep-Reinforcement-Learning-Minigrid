@@ -1,0 +1,18 @@
+env_name: "MiniGrid-MultiRoom-N6-v0"
+learning_rate: 0.0001
+gamma: 0.99
+batch_size: 32
+epsilon_start: 1.0
+epsilon_end: 0.1
+epsilon_decay: 100000
+buffer_size: 10000
+target_update: 20
+num_episodes: 20000
+eval_episodes: 5
+num_actions: 4
+preprocessing_pipeline: "custom"
+replay_buffer: "uniform"
+
+agent_variant: "double_huber"
+
+

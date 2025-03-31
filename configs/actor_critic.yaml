@@ -1,0 +1,11 @@
+env_name: "MiniGrid-MultiRoom-N4-S5-v0" #options "MiniGrid-MultiRoom-N6-v0" or "MiniGrid-MultiRoom-N4-S5-v0" or "MiniGrid-MultiRoom-N4-S5-v0"
+preprocessing_pipeline: "custom"  # options: "custom" or "deepmind"
+num_actions: 4
+num_episodes: 20000
+agent_variant: "actor_critic"
+
+
+
+
+
+
