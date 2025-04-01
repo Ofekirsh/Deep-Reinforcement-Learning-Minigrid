@@ -2,48 +2,7 @@
 
 This repository contains a Deep Reinforcement Learning project implemented in PyTorch. It starts with a basic Deep Q-Network (DQN) applied to a MiniGrid environment and then introduces several improvements such as prioritized experience replay.
 
-![Evaluation Demo](videos/evaluation.gif)
-
-
-## Project Structure
-
-```plaintext
-Deep-Reinforcement-Learning-Minigrid/
-├── configs/
-│   └── config.yaml
-├── models/
-│   ├── __init__.py
-│   ├── dqn_base.py
-│   ├── dqn_double.py
-│   ├── dqn_dueling.py
-│   ├── actor_critic_base.py
-│   └── actor_critic_advanced.py
-├── agents/
-│   ├── __init__.py
-│   ├── dqn_agent_base.py
-│   ├── dqn_agent_double.py
-│   ├── dqn_agent_dueling.py
-│   ├── actor_critic_agent_base.py
-│   └── actor_critic_agent_advanced.py
-├── experiments/
-│   ├── dqn/
-│   │   ├── train.py
-│   │   └── evaluate.py
-│   └── actor_critic/
-│       ├── train.py
-│       └── evaluate.py
-├── preprocessing/
-│   ├── __init__.py
-│   ├── custom_preprocess.py
-│   └── deepmind_preprocess.py
-├── utils/
-│   ├── __init__.py
-│   ├── replay_buffer.py
-│   └── prioritized_replay_buffer.py
-├── videos/
-├── requirements.txt
-└── README.md
-```
+[![Evaluation Demo](https://i.sstatic.net/Vp2cE.png)](videos/evaluation.mp4)
 
 ## Setup
 
