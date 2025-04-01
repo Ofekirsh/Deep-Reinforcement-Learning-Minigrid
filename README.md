@@ -2,7 +2,7 @@
 
 This repository contains a Deep Reinforcement Learning project implemented in PyTorch. It starts with a basic Deep Q-Network (DQN) applied to a MiniGrid environment and then introduces several improvements such as prioritized experience replay.
 
-[![Evaluation Demo](https://i.sstatic.net/Vp2cE.png)](videos/evaluation.mp4)
+<img src="videos/evaluation_with_memory.gif" alt="Evaluation with memory">
 
 ## Setup
 
