@@ -2,7 +2,7 @@
 
 This repository contains a Deep Reinforcement Learning project implemented in PyTorch. It starts with a basic Deep Q-Network (DQN) applied to a MiniGrid environment and then introduces several improvements such as prioritized experience replay.
 
-<img src="videos/evaluation_with_memory.gif" alt="Evaluation with memory">
+<img src="videos/evaluation_with_memory.gif" alt="Evaluation with memory" width="400px">
 
 ## Setup
 
@@ -139,10 +139,6 @@ _If you're on Windows, please download a static build of ffmpeg and add its `bin
   python experiments/dqn/evaluate.py
   ```
 
-## Summary
+## Note
 
-- This project implements a basic DQN applied to a MiniGrid environment.
-- Improvements include adding a prioritized experience replay mechanism (see [Prioritized Experience Replay](https://arxiv.org/abs/1511.05952)).
-- The replay buffer type (uniform or prioritized) can be configured via `configs/config.yaml`.
-- The project is modular, making it easy to extend with further improvements.
-
+It is possible to run the agent implemented using the Actor-Critic method. However, due to time and computational constraints, we were unable to determine the optimal hyperparameters required to successfully solve the game.
